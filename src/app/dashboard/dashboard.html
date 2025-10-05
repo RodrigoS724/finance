@@ -1,0 +1,42 @@
+<div class="page">
+  <aside class="sidebar">
+    <div class="logo">
+      <div class="home-icon">🏠</div>
+    </div>
+    <nav class="nav-buttons">
+      <button>FACTURAR</button>
+      <button>BUSCAR F.</button>
+      <button>LISTAR COMPROBANTES</button>
+      <button>CAJA</button>
+      <button>TAREAS</button>
+      <button>INVENTARIO</button>
+      <button>CLIENTES</button>
+      <button>DATOS</button>
+      <button>PROVEEDORES</button>
+      <button>AJUSTES</button>
+    </nav>
+  </aside>
+
+  <main class="main-card">
+    <header class="top-bar">
+      <div class="center">
+        <div class="app-name">{{ appName }}</div>
+        <div class="company">{{ companyName }}</div>
+      </div>
+      <div class="date">{{ today }}</div>
+    </header>
+
+    <section class="content">
+      <h3 class="section-title">Ventas Hoy</h3>
+      <div class="chart-wrap">
+        <canvas baseChart
+                [data]="barChartData"
+                [options]="barChartOptions"
+                [type]="barChartType">
+        </canvas>
+      </div>
+    </section>
+
+    <footer class="powered">Powered By</footer>
+  </main>
+</div>
