@@ -8,8 +8,7 @@ export const appConfig: ApplicationConfig = {
   providers: [
     importProvidersFrom(BrowserModule, HttpClientModule),
     provideRouter([
-      { path: '', component: DashboardComponent },
-      // agrega rutas perezosas aquí si las necesitas
+      { path: '', component: DashboardComponent }
     ])
   ]
 };
