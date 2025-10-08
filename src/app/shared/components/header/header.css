@@ -1,0 +1,7 @@
+.header-row{display:flex;flex-direction:column;gap:8px}
+.top-title{font-size:13px;padding-top:4px}
+.header-main{display:flex;align-items:center;justify-content:space-between}
+.left-meta{width:100px}
+.center-meta{flex:1}
+.right-meta{width:80px;text-align:right}
+h2{margin:0;font-weight:500}

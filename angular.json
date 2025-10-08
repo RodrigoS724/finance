@@ -5,6 +5,11 @@
   "cli": {
     "analytics": false
   },
+  "schematics": {
+    "@schematics/angular:component": {
+      "style": "css"
+    }
+  },
   "projects": {
     "tauri-app": {
       "projectType": "application",
