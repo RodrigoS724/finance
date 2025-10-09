@@ -1,0 +1,12 @@
+<section class="dash-shell">
+  <header class="dash-header">
+    <div class="left">[Nombre de app]</div>
+    <div class="center">Company Name</div>
+    <div class="right">{{ today }}</div>
+  </header>
+
+  <div class="card">
+    <h3 class="title">Ventas Hoy</h3>
+    <app-dashboard-chart [data$]="chartData$"></app-dashboard-chart>
+  </div>
+</section>

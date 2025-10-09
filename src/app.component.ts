@@ -7,14 +7,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, SidebarComponent, RouterOutlet],
-  template: `
-    <div class="app-shell">
-      <app-sidebar class="sidebar"></app-sidebar>
-      <main class="main">
-        <router-outlet></router-outlet>
-      </main>
-    </div>
-  `,
-  styleUrls: ['./app.component.scss'],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent {}
+export class AppComponent {
+  // shell-level logic can go here
+}
