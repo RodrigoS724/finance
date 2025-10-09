@@ -1,0 +1,2 @@
+.dashboard-grid{display:flex;flex-direction:column;gap:12px;margin-top:12px}
+.chart-card{border:1px solid var(--border);padding:12px;border-radius:6px;background:transparent}

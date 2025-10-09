@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-sidevar',
-  imports: [],
+  selector: 'app-sidebar',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './sidevar.html',
-  styleUrl: './sidevar.css'
+  styleUrls: ['./sidevar.css']
 })
-export class Sidevar {
-
+export class sidevar {
+  items = ['FACTURAR','BUSCAR F.','LISTAR COMPROBANTES','CAJA','TAREAS','INVENTARIO','CLIENTES','DATOS','PROVEEDORES','AJUSTES'];
 }

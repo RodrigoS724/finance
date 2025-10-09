@@ -1,0 +1,13 @@
+<div class="chart-wrap">
+  <div class="chart-area">
+    <div class="bars">
+      <div *ngFor="let v of data; let i = index" class="bar" [style.height]="heightFor(v)" [attr.data-index]="i">
+        <div class="bar-inner" style="height:100%"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="x-axis">
+    <span *ngFor="let lab of labels">{{lab}}</span>
+  </div>
+</div>
